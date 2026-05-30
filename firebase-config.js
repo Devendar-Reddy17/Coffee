@@ -5,13 +5,13 @@
 // Important: client-side passcodes are only a privacy layer. Use Firebase
 // Authentication and Firestore security rules for real access control.
 const firebaseConfig = {
-  apiKey: "AIzaSyCw2xq31jzrmAbOG6GnHNk0wrOZkBzBfyA",
-  authDomain: "coffee-cfe0b.firebaseapp.com",
-  projectId: "coffee-cfe0b",
-  storageBucket: "coffee-cfe0b.firebasestorage.app",
-  messagingSenderId: "1087830533709",
-  appId: "1:1087830533709:web:9834c4ce573a1fbd9d1e04",
-  measurementId: "G-XQN0S0LBLX"
+  apiKey: "AIzaSyBuTRGpcGtzOJlZCfzKTEMfwSXPdlByx_w",
+  authDomain: "janvi-invitation.firebaseapp.com",
+  projectId: "janvi-invitation",
+  storageBucket: "janvi-invitation.firebasestorage.app",
+  messagingSenderId: "32217590652",
+  appId: "1:32217590652:web:213a8e6063160f97e792f9",
+  measurementId: "G-4L2ZRN6ZZ9"
 };
 
-const ADMIN_PASSCODE = "change-this-passcode";
+const ADMIN_PASSCODE = "Devu.3433";

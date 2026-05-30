@@ -24,9 +24,16 @@
       </div>
 
       <div id="landingView" class="view is-active">
-        <p class="eyebrow">A small question</p>
-        <h1>Would you like to grab a coffee with me?</h1>
-        <p class="note">No pressure. Just a warm cup, an easy conversation, and a little time together.</p>
+        <div class="greeting-row">
+          <h1 class="greeting-title">Hi Janvi,</h1>
+          <figure class="portrait-card">
+            <!-- Replace this src with her picture when you are ready, for example: janvi-photo.jpg -->
+            <img src="assets/coffee-placeholder.svg" alt="A warm coffee cup" class="portrait-image">
+          </figure>
+        </div>
+        <p class="eyebrow">A small request</p>
+        <h2 class="request-title">Would you like to grab a coffee with me?</h2>
+        <p class="note">I have wanted to ask you this for a while. Just a warm cup, an easy conversation, and a little time together.</p>
         <div class="button-row">
           <button id="yesButton" class="button primary" type="button">Yes</button>
           <button id="noButton" class="button ghost" type="button">No</button>
@@ -35,7 +42,7 @@
 
       <form id="yesForm" class="view form-view" novalidate>
         <p class="eyebrow">Lovely</p>
-        <h2>Let’s choose the details.</h2>
+        <h2>Let's choose the details.</h2>
 
         <label class="field">
           <span>Date</span>
@@ -49,7 +56,7 @@
 
         <label class="check-field">
           <input id="smallDrive" name="smallDrive" type="checkbox">
-          <span>Small drive afterwards 🚗</span>
+          <span>Small drive afterwards &#128663;</span>
         </label>
 
         <button id="submitButton" class="button primary full" type="submit">Send</button>
@@ -64,8 +71,8 @@
 
       <div id="thanksView" class="view">
         <p class="eyebrow">Sent</p>
-        <h2>Perfect. I’ll keep this one close.</h2>
-        <p class="note">Thank you for saying yes. I’m already looking forward to it.</p>
+        <h2>Perfect. I'll keep this one close.</h2>
+        <p class="note">Thank you for saying yes. I'm already looking forward to it.</p>
       </div>
     </section>
   </main>
