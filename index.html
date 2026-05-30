@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="invitation" aria-live="polite">
+      <div class="cup-wrap" aria-hidden="true">
+        <div class="steam steam-one"></div>
+        <div class="steam steam-two"></div>
+        <div class="steam steam-three"></div>
+        <div class="cup">
+          <div class="coffee"></div>
+          <div class="handle"></div>
+        </div>
+        <div class="saucer"></div>
+      </div>
+
+      <div id="landingView" class="view is-active">
+        <p class="eyebrow">A small question</p>
+        <h1>Would you like to grab a coffee with me?</h1>
+        <p class="note">No pressure. Just a warm cup, an easy conversation, and a little time together.</p>
+        <div class="button-row">
+          <button id="yesButton" class="button primary" type="button">Yes</button>
+          <button id="noButton" class="button ghost" type="button">No</button>
+        </div>
+      </div>
+
+      <form id="yesForm" class="view form-view" novalidate>
+        <p class="eyebrow">Lovely</p>
+        <h2>Let’s choose the details.</h2>
+
+        <label class="field">
+          <span>Date</span>
+          <input id="selectedDate" name="selectedDate" type="date" required>
+        </label>
+
+        <label class="field">
+          <span>Coffee shop</span>
+          <input id="coffeeShop" name="coffeeShop" type="text" placeholder="A place you like" maxlength="80" required>
+        </label>
+
+        <label class="check-field">
+          <input id="smallDrive" name="smallDrive" type="checkbox">
+          <span>Small drive afterwards 🚗</span>
+        </label>
+
+        <button id="submitButton" class="button primary full" type="submit">Send</button>
+        <p id="formError" class="status error" role="alert"></p>
+      </form>
+
+      <div id="noView" class="view">
+        <p class="eyebrow">All good</p>
+        <h2>Thank you for being honest.</h2>
+        <p class="note">I appreciate you answering. Wishing you a peaceful day and a very good coffee anyway.</p>
+      </div>
+
+      <div id="thanksView" class="view">
+        <p class="eyebrow">Sent</p>
+        <h2>Perfect. I’ll keep this one close.</h2>
+        <p class="note">Thank you for saying yes. I’m already looking forward to it.</p>
+      </div>
+    </section>
+  </main>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
